@@ -35,4 +35,7 @@ Contributions are welcome! Please create a pull request with your proposed chang
 ## 📜 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-   
+## 📦 Screenshot
+![Screenshot](https://github.com/ADVindiancoder/Advanced-Text-Editor/blob/main/Screenshot/Screenshot%20(88).png)
+![Screenshot](https://github.com/ADVindiancoder/Advanced-Text-Editor/blob/main/Screenshot/Screenshot%20(89).png)
+
