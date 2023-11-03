@@ -1,5 +1,6 @@
 # 📝 Advanced Text Editor
 
+![GitHub Logo](topic.png)
 
 A feature-rich text editor created in Java with a graphical user interface (GUI).
 
