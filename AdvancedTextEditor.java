@@ -1,4 +1,5 @@
 import javax.swing.*;
+import javax.swing.text.DefaultEditorKit;
 import java.awt.*;
 import java.awt.event.*;
 import java.io.*;
@@ -36,6 +37,15 @@ public class AdvancedTextEditor extends JFrame {
         findItem = new JMenuItem("Find");
         replaceItem = new JMenuItem("Replace");
         wordCountItem = new JMenuItem("Word Count");
+
+        openItem.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_O, InputEvent.CTRL_DOWN_MASK));
+        saveItem.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_S, InputEvent.CTRL_DOWN_MASK));
+        cutItem.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_X, InputEvent.CTRL_DOWN_MASK));
+        copyItem.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_C, InputEvent.CTRL_DOWN_MASK));
+        pasteItem.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_V, InputEvent.CTRL_DOWN_MASK));
+        findItem.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_F, InputEvent.CTRL_DOWN_MASK));
+        replaceItem.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_R, InputEvent.CTRL_DOWN_MASK));
+        wordCountItem.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_W, InputEvent.CTRL_DOWN_MASK));
 
         openItem.addActionListener(e -> openFile());
         saveItem.addActionListener(e -> saveFile());
@@ -121,7 +131,6 @@ public class AdvancedTextEditor extends JFrame {
             }
         }
     }
-
     private void replaceText() {
         String searchText = JOptionPane.showInputDialog("Find:");
         if (searchText != null) {
